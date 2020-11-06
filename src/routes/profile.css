@@ -1,0 +1,48 @@
+
+
+@media screen and (max-width:529px){
+
+    .profile_p{text-indent: -9999px; overflow: hidden;}
+    
+    #profile_wrap{max-width: 529px; min-height:605px; overflow: hidden;}
+    hr{border: 0; margin: 0; width: 100%; height: 1px; background-color: #ccc;}
+    /* header */
+    
+    .profile_header{position: fixed; z-index: 10; left: 0; top: 0; width: 100%; background: url(./images/bg_default.png)no-repeat 50% 50%; background-size: cover; width: 100%; height: 65vh; }
+    .profile_header_top{width: 100%; display: flex;padding: 5px 10px; box-sizing: border-box;}
+    .profile_header_top div{width: 33%;display: flex; justify-content: space-between;}
+    .profile_header_top div ul{display: flex;}
+    .profile_header_top div:nth-of-type(2){justify-content: center; margin-left: 30px;}
+    .profile_header_top div:nth-of-type(3){display: flex; justify-content: flex-end;}
+    .profile_header_top div ul li{color: #fff; font-size: 12px; font-weight: normal; padding: 0 2px;}
+
+    /* main_top */
+    .profile_main_top ul{display: flex; justify-content: space-between; padding: 10px 20px;}
+    .profile_main_top ul li{color: #fff; font-size: 21px;}
+    .profile_main_top ul li a{color: #fff; font-size: 21px;}
+
+    /* top */
+    .profile_top{position: relative; width: 100%;}
+    .profile_top ul{padding-top: 50vh;}
+    .profile_top ul li{display: flex; justify-content: center; margin-top: 20px;}
+    .profile_top ul li img{position: relative; z-index: 15; width: 100px; border-radius: 50%;}
+    .profile_top ul li input{padding: 5px;}
+
+
+    /* bottom */
+    .profile_bottom{position: relative; margin-top: 20px; display: flex; justify-content: center;}
+    .profile_bottom ul{display: flex; flex-direction: column; align-items: center;}
+    .profile_bottom ul li{display: flex; margin: 5px 10px;}
+    .profile_bottom ul li:first-of-type{padding: 15px; background: #f2f2f2; border-radius: 50%; width: 20px; height: 20px;}
+    .profile_bottom ul li:last-of-type{font-size: 12px; font-weight: 600; font-family: "Open Sans",sans-serif;}
+    .profile_bottom ul li i{font-size: 20px;}
+
+
+}
+
+@media screen and (min-width:529px) {
+body{position: fixed; height: 100%; width: 100%; background: #ffe94a;}
+.profile_p{font-size: 30px; height: 100%; color: #fff; display: flex; justify-content: center; align-items: center; margin-top: 50vh;}
+#profile_wrap{display: none;}
+}
+

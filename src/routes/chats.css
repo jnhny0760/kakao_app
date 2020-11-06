@@ -1,0 +1,67 @@
+
+/* reset */
+*{margin: 0; padding: 0;}
+ol,ul{list-style: none;}
+body{font-family: 'Open Sans', sans-serif;}
+a{text-decoration: none; color: #000;}
+
+/* main.css */
+
+@media screen and (max-width:529px){
+.p{text-indent: -9999px; overflow: hidden;}
+
+#chats_wrap{max-width: 529px; min-height:605px; overflow: hidden;}
+hr{border: 0; margin: 0; width: 100%; height: 1px; background-color: #ccc;}
+/* header */
+
+.chats_header{z-index: 10; position: fixed; left: 0; top: 0; background-color: #523737; width: 100%; height: 64px;}
+.chats_header_top{width: 100%; display: flex;padding: 5px 10px; box-sizing: border-box;}
+.chats_header_top div{width: 33%;display: flex; justify-content: space-between;}
+.chats_header_top div ul{display: flex;}
+.chats_header_top div:nth-of-type(2){justify-content: center;}
+.chats_header_top div:nth-of-type(3){display: flex; justify-content: flex-end;}
+.chats_header_top div ul li{color: #fff; font-size: 12px; font-weight: normal; padding: 0 2px;}
+
+/* header_bottom */
+.chats_header_bottom{width: 100%; padding: 5px 10px 15px 10px; box-sizing: border-box; height: 42px;background-color: #523737}
+.chats_header_bottom ul{display: flex; justify-content: space-between;}
+.chats_header_bottom ul li{display: flex;  font-size: 16px;}
+.chats_header_bottom ul li:first-of-type{color: #fff; opacity: 0.5;}
+.chats_header_bottom ul li:nth-of-type(2){color: #fff; margin-left: -10px;}
+.chats_header_bottom ul li:nth-of-type(2) span{color: #fff; margin-left: 5px;}
+.chats_header_bottom ul li:nth-of-type(3){font-size: 20px; color: #fff;}
+
+
+/* srch */
+
+.chats_srch{margin-top: 46px; display: flex; padding: 10px 25px;justify-content: center;}
+.chats_srch i{display: flex; font-size: 16px; line-height: 27px; position: absolute; left: 40px; color: #ccc;}
+.chats_srch input{height: 27px; width: 470px; background: #f1f2f3; border-radius: 5px; box-sizing: border-box; border: 1px solid transparent; text-align: center;   transition: border-color 0.2s linear;}
+.chats_srch input::placeholder{font-size: 13px; text-align: center;}
+.chats_srch input:focus{border-color: #ffe94a; outline: none;}
+
+/* friends */
+.chats_friends{height: 830px;}
+.chats_friends>ul{width: 100%; border-top: 1px solid #ddd;}
+.chats_friends>ul:last-of-type{border-bottom: 1px solid #ddd;}
+.chats_friends ul a{position: relative; display: flex; width: 100%; padding: 15px;}
+.chats_friends ul a >li:first-of-type{width: 50px; margin-right: 20px;}
+.chats_friends ul li ul li:first-of-type{font-size: 16px; font-weight: bold; padding: 0 0  10px 0;}
+.chats_friends ul li ul li:nth-of-type(2){font-size: 11px; color: #b4b4b4;}
+.chats_friends .time{position: absolute; right: 50px; top: 10px; font-size: 10px; color: #b4b4b4;}
+.chats_friends ul li img{width: 50px; border-radius: 50%;}
+
+
+/* kakao */
+.chats_kakao{position: fixed; z-index: 15; width: 60px; height: 60px; right: 20px; bottom: 70px; background: #ffe94a; border-radius: 50%; text-align: center; line-height: 60px; font-size: 25px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); transition: all 0.2s linear 0s;}
+.chats_kakao:hover{background: #523737;}
+.chats_kakao:hover i{color: #fff;}
+
+}
+
+
+@media screen and (min-width:529px) {
+    body{position: fixed; height: 100%; width: 100%; background: #ffe94a;}
+    .chats_p{font-size: 30px; height: 100%; color: #fff; display: flex; justify-content: center; align-items: center; margin-top: 50vh;}
+    #chats_wrap{display: none;}
+    }
